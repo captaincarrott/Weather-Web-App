@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url(fonts/Poppins/Poppins-SemiBold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background-color: #222;
+    min-height: 667px;
+}
+.container {
+    padding: 40px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #00feba,#5b548a);
+    width: 90%;
+    /* height: 90%; */
+    min-width: 270px;
+    max-width: 475px;
+    text-align: center;
+    border-radius: 20px;
+}
+.parent-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-box {
+    padding: 25px;
+    width: 80%;
+    height: 60px;
+    border-style: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #ebfffc;
+}
+.search-box::placeholder {
+    padding: 50px 0px 0px 0px;
+    color: #7e7e7e;
+    font-size: 18px;
+}
+.search-icon {
+    width: 16px;
+}
+button {
+    background-color: #ebfffc;
+    border-style: none;
+    border-radius: 100%;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.status > img {
+    width: 180px;
+}
+.temprature {
+    color: white;
+    font-size: 80px;
+    font-family: 'poppins-semibold';
+}
+.country-name {
+    color: white;
+    font-size: 48px;
+    font-family: 'poppins-semibold';
+}
+.parent-3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.info-1,
+.info-2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: left;
+}
+.p-group-1 p:nth-child(2) {
+    font-size: 18px;
+}
+.p-group-2 p:nth-child(2) {
+    font-size: 18px;
+}
+.info-1 > img {
+    width: 40px;
+    margin-bottom: 12px;
+}
+.info-2 > img {
+    width: 40px;
+    margin-bottom: 12px;
+}
+.p-group-1 {
+    padding-left: 10px;
+}
+.p-group-2 {
+    padding-left: 10px;
+}
+.hide {
+    display: none;
+}
+@media(max-width: 480px) {
+    .search-box {
+        padding: 25px;
+        width: 70%;
+        height: 60px;
+    }
+    .search-box::placeholder {
+        font-size: 14px;
+    }
+    .info-1 > img {
+        width: 40px;
+        margin-bottom: 0px;
+    }
+    .info-2 > img {
+        width: 40px;
+        margin-bottom: 0px;
+    }
+    .info-1,
+    .info-2 {
+        font-size: 18px;
+    }
+    .p-group-1 p:nth-child(2) {
+        font-size: 12px;
+    }
+    .p-group-2 p:nth-child(2) {
+        font-size: 12px;
+    }
+}
+@media(max-width: 375px) {
+    .search-box {
+        padding: 25px;
+        width: 70%;
+        height: 60px;
+    }
+    .search-box::placeholder {
+        font-size: 14px;
+    }
+    .info-1 > img {
+        width: 30px;
+        margin-bottom: 0px;
+    }
+    .info-2 > img {
+        width: 30px;
+        margin-bottom: 0px;
+    }
+    .info-1,
+    .info-2 {
+        font-size: 14px;
+    }
+    .p-group-1 p:nth-child(2) {
+        font-size: 10px;
+    }
+    .p-group-2 p:nth-child(2) {
+        font-size: 10px;
+    }
+}
+@media(max-width: 310px) {
+    .container {
+        padding: 20px 25px;
+    }
+    .info-1,
+    .info-2 {
+        font-size: 10px;
+    }
+    .p-group-1 p:nth-child(2) {
+        font-size: 10px;
+    }
+    .p-group-2 p:nth-child(2) {
+        font-size: 10px;
+    }
+    .info-1 > img {
+        width: 30px;
+        margin-bottom: 0px;
+    }
+    .info-2 > img {
+        width: 30px;
+        margin-bottom: 0px;
+    }
+    .search-box {
+        padding: 25px;
+        width: 70%;
+        height: 60px;
+    }
+    .search-box::placeholder {
+        font-size: 12px;
+    }
+    .search-icon {
+        width: 12px;
+    }
+    button {
+        width: 55px;
+        height: 55px;
+    }
+    .status > img {
+        width: 90px;
+    }
+    .temprature {
+        font-size: 40px;
+    }
+    .country-name {
+        font-size: 24px;
+    }
+}
